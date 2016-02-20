@@ -12,6 +12,8 @@ r = praw.Reddit('Related submissions')
 r.login(second_acc, second_acc_pass)
 print('logged onto reddit')
 checked = []
+# Open settings file. Settings file is used to determine which subreddits to check. Modify settings file if you want to check one subreddit but the other. More details in README.
+file = open('settings.txt', 'r')
 
 # Blacklisted words. If a post has any of these words, it will not detect it as a match and a notification will not be sent.
 blacklist = ['nsfw', 'nsfl', 'lol']
@@ -30,10 +32,7 @@ bKeyWords = [('Politics related'), worldnews, 'Economics related', economics]
 
 # Main loop.
 while True:
-    # Open settings file. Settings file is used to determine which subreddits to check. Modify settings file if you want to check one subreddit but the other. More details in README.
-    file = open('settings.txt', 'r')
     txt = file.read()
-    
     # AskReddit search.
     subreddit = r.get_subreddit('askreddit')
     # Loops through latest 10 submission on AskReddit.
