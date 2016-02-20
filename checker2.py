@@ -2,7 +2,7 @@ import time
 import praw
 
 r = praw.Reddit('Related submissions')
-r.login('appubot', 'appu2844')
+r.login('MSG_SENDING_ACC_USERNAME', 'PASSWORD')
 print('logged onto reddit')
 checked = []
 
@@ -59,7 +59,7 @@ while True:
                     break
                 print('%s thread found' % manga[0].lower())
                 msg = '[%s related thread](%s)' % (manga[0], submission.short_link)
-                r.send_message('appu1232', '%s' % submission.title, msg)
+                r.send_message('MSG_RECEIVING_ACC_USERNAME', '%s' % submission.title, msg)
                 checked.append(submission.id)
                 break
     time.sleep(4)
