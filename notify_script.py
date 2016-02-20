@@ -55,6 +55,7 @@ while True:
                 msg = '[%s related thread](%s)' % (elem[0], submission.short_link)
                 r.send_message(main_acc, '%s' % submission.title, msg)
                 checked.append(submission.id)
+                break
     # Reddit API encourages that subsequent calls to servers have at least a 2 second delay. Feel free to increase the sleep time but please stay above 2.
     time.sleep(4)
     
