@@ -27,7 +27,7 @@ while True:
         blacklist_words = any(string in op_title for string in blacklist)
         for elem in aKeyWords:
             key_words = any(string in op_title for string in elem[1])
-            if ('a' in txt) and submission.id not in checked and key_words:
+            if ('askreddit' in txt) and submission.id not in checked and key_words:
                 if blacklist_words:
                     checked.append(submission.id)
                     break
@@ -43,7 +43,7 @@ while True:
         blacklist_words = any(string in op_title for string in blacklist)
         for elem in mKeyWords:
             key_words = any(string in op_title for string in elem[1])
-            if ('m' in txt) and submission.id not in checked and key_words:
+            if ('worldnews' in txt) and submission.id not in checked and key_words:
                 if blacklist_words:
                     checked.append(submission.id)
                     break
