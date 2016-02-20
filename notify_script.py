@@ -40,15 +40,14 @@ while True:
         # Title of post
         post_title = submission.title.lower()
         blacklist_words = any(string in post_title for string in blacklist)
+        if blacklist_words:
+            checked.append(submission.id)
         # Loop through tuple (and in turn, the key words of said tuple) for key word matches in the title of the post.
         for elem in aKeyWords:
             key_words = any(string in post_title for string in elem[1])
             # If the sub AskReddit is enabled, send message when key word submission is found.
             if ('askreddit' in txt) and submission.id not in checked and key_words:
                 # Not a match if matched with a blacklisted word.
-                if blacklist_words:
-                    checked.append(submission.id)
-                    break
                 # Optional, delete if you want.
                 print('%s thread found' % elem[0].lower())
                 # Message title with link to submission.
@@ -64,12 +63,11 @@ while True:
     for submission in subreddit.get_new(limit=10):
         post_title = submission.title.lower()
         blacklist_words = any(string in post_title for string in blacklist)
+        if blacklist_words:
+            checked.append(submission.id)
         for elem in mKeyWords:
             key_words = any(string in post_title for string in elem[1])
             if ('worldnews' in txt) and submission.id not in checked and key_words:
-                if blacklist_words:
-                    checked.append(submission.id)
-                    break
                 print('%s thread found' % elem[0].lower())
                 msg = '[%s related thread](%s)' % (elem[0], submission.short_link)
                 r.send_message(main_acc', '%s' % submission.title, msg)
