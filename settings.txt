@@ -1,1 +1,2 @@
-amq
+askreddit
+worldnews
