@@ -38,11 +38,11 @@ while True:
     # Loops through latest 10 submission on AskReddit.
     for submission in subreddit.get_new(limit=10):
         # Title of post
-        op_title = submission.title.lower()
-        blacklist_words = any(string in op_title for string in blacklist)
+        post_title = submission.title.lower()
+        blacklist_words = any(string in post_title for string in blacklist)
         # Loop through tuple (and in turn, the key words of said tuple) for key word matches in the title of the post.
         for elem in aKeyWords:
-            key_words = any(string in op_title for string in elem[1])
+            key_words = any(string in post_title for string in elem[1])
             # If the sub AskReddit is enabled, send message when key word submission is found.
             if ('askreddit' in txt) and submission.id not in checked and key_words:
                 # Not a match if matched with a blacklisted word.
@@ -61,10 +61,10 @@ while True:
     # Same deal. Search for keywords (bkeyWords) in the worldnews subreddit.
     subreddit = r.get_subreddit('worldnews')
     for submission in subreddit.get_new(limit=10):
-        op_title = submission.title.lower()
-        blacklist_words = any(string in op_title for string in blacklist)
+        post_title = submission.title.lower()
+        blacklist_words = any(string in post_title for string in blacklist)
         for elem in mKeyWords:
-            key_words = any(string in op_title for string in elem[1])
+            key_words = any(string in post_title for string in elem[1])
             if ('worldnews' in txt) and submission.id not in checked and key_words:
                 if blacklist_words:
                     checked.append(submission.id)
