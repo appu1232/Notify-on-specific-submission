@@ -79,3 +79,4 @@ while True:
     time.sleep(4)
     
     # Can expand down for more subreddits. Copy paste the cluster from 'subreddit = ...' down to time.sleep and change subreddit name and keyword tuple as needed.
+    # Also make sure to add the new subreddit to the settings.txt file
