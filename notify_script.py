@@ -24,8 +24,9 @@ economics = ['stocks', 'wall street']
 # Add more if you want
 
 # Tuple of what will be the title of the message when a submission is found, and the specified key word list. Modify and expand as needed.
+# There are multiple lists of tuples here to show that you can use more than one set of words to match. For example, if you want to search for both politics and economics in one subreddit, you would use the bkeyWords list.
 aKeyWords = [('Anime related', anime), ('Video Game related', videoGames)]
-bKeyWords = [('Politics related'), worldnews, 'Economics related', economics]
+bKeyWords = [('Politics related'), worldnews, ('Economics related', economics)]
 # Add more if you want
 
 # Main loop.
