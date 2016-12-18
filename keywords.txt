@@ -1,0 +1,27 @@
+----Blacklist----
+recommend, recommendation, recomend, recommendations, suggest, suggestion, sugest, suggestions
+
+----Anime----
+Steins;Gate = steins;gate, stiens;gate, s;g, steins, stiens, steins gate, stiens gate, steinsgate, stiensgate, stein's gate, stien's gate, stein's;gate, stien's;gate, stein'sgate, stien'sgate, steyns;gate, stayns;gate, steyns gate, stayns gate, steynsgate, staynsgate, okabe, kurisu, makise, mayuri, steins;gate0, stiens;gate0, steinsgate0, stiensgate0
+Madoka Magica = madoka, madoko, modoka, modoko, madaka, homura
+Kaguya Wants to be Confessed To = kaguya wants to be, kagaya wants to be, kuguya wants to be, kaguya want to be
+One Punch Man = one punch man s2, opm s2, one punch man season 2, opm season 2, one punch man second season, opm second season, second season of opm, second season of one punch man, s2 of one punch man, s2 of opm
+Kimi no Na wa = kimi no na wa, your name, kimi na no wa, kimi no wa na
+
+----Manga----
+Tomo = tomo chan, tomo-chan
+Mousou Telepathy = mousou-telepathy, mousou telepathy, musou telepathy, mosou telepathy, mousuo telepathy, muosuo telepathy, muosou telepathy, musuo telepathy
+Iris Zero = iris zero, ires zero
+Bunny Girl Senpai = seishun buta yarou
+Masamune-kun = masamune - kun, masamune-
+Horimiya = horimiya, horymiya, horimia
+Tsurezure = tsurezure, tsurezur, tsurzure
+Kimi wa Midara = kimi wa midara, kimiwa midara
+Kaguya Wants to be Confessed To = kaguya wants to be, kagaya wants to be, kuguya wants to be, kaguya want to be
+KawaiiJo = kawaii joushi o komarasetai, kawaii joushi wo komarasetai, kawai joushi o komarasetai, kawai joushi wo komarasetai
+ReLIFE = relife, rilife
+Shokugeki = shokugeki, shokugeki, shokugiki, shokugiki
+Henjo = henjo, henjyo, hen na joshi
+Suki x Suki = suki x suki, suki suki, sukixsuki
+
+----End----
